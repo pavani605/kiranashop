@@ -27,7 +27,51 @@
 .App-link {
   color: #61dafb;
 }
+.auth-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  min-width: 100%;
+  min-height: 100vh;
+  background: #7c69e8;
+  background-image: url("asserts/img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+   overflow-y: auto;
+}
 
+.btn-success {
+  color: #fff;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success:active:focus {
+  color: #fff;
+  background-color: #1abc9c; /* Keep the same background */
+  border-color: #1abc9c;
+  text-decoration: none;
+  box-shadow: none; /* Removes any extra shadow effect */
+}
+@media (max-width: 768px) {
+  .auth-wrapper {
+    padding: 10px; /* Adds padding on mobile for better spacing */
+  }
+
+  .input-group-text {
+    font-size: 1.2rem; /* Adjust icon size for mobile */
+  }
+
+  .btn-success {
+    font-size: 1.1rem; /* Slightly larger buttons on mobile */
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
